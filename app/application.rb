@@ -26,7 +26,7 @@ class Application
         @@cart << search_item
         resp.write "added #{search_item}\n"
       else
-        resp.write "We don't have that item #{search_item}"
+        resp.write "We don't have that item #{search_item.to_s}"
       end
     else
       resp.write "Path Not Found"
